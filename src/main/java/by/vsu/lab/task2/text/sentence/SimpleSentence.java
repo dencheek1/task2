@@ -65,7 +65,6 @@ public abstract class SimpleSentence implements CompositeTextPart {
     @Override
     public boolean find(TextPart textPart) {
 	if(this.equals(textPart))return true;
-	
 	Iterator<SentencePart> iterator = sentence.iterator();
 	    while (iterator.hasNext()) {
 	        TextPart part = iterator.next();
